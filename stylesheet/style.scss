@@ -1,0 +1,39 @@
+/* las variables van arriba si no se utiliza distintos documentos para hacerlos */
+
+$border-color: grey;
+$ligth-color: white;
+$font-color: red;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: $ligth-color;
+  width: 100%;
+}
+
+.menu-web {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-mobile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.nav-small {
+  list-style: none;
+}
+
+.nav {
+  display: none;
+
+}
