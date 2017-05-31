@@ -2,38 +2,59 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="stylesheet/style.css">
-  <title>Header</title>
+  <link rel="stylesheet" href="stylesheet/index.css">
+  <link href="https://fonts.googleapis.com/css?family=Barrio|Open+Sans" rel="stylesheet">
+  <meta name="viewport" content= "width=device-width">
+  <title>Ejercicio Header</title>
 </head>
 <body>
-  <header class="header">
+  <header>
 
-    <div class="menu-web">
-      <a href="#">
-        <img src="images/logo-adalab.png" alt="logo Adalab">
-      </a>
+    <div  class="header">
 
-      <button type="button" name="button">
-        <img src="images/icon-menu.png" alt="icono menu">
-      </button>
+      <div class="menu-web">
+        <a class="logo" href="#">
+          <img src="images/logo.png" alt="logo Adalab">
+        </a>
 
-      <ul class="nav">
-        <li>Curso</li>
-        <li>Nosotros</li>
-        <li>Contacto</li>
-        <li>Voluntariado</li>
-      </ul>
+        <button id="icon" class="btn" type="button" name="button">
+          <img src="images/menu.png" alt="icono menu">
+        </button>
+
+        <ul class="nav">
+          <li><a href="#">Curso</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li><a href="#">Contacto</a></li>
+          <li><a href="#">Voluntariado</a></li>
+        </ul>
+      </div>
+
+      <div class="text">
+        <h1>Lorem Ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+
     </div>
 
     <div class="menu-mobile">
+
+      <button id="close" class="btn-close" type="button" name="button">
+        <img src="images/close.png" alt="icono menu">
+      </button>
+
       <ul class="nav-small">
-        <li>Curso</li>
-        <li>Nosotros</li>
-        <li>Contacto</li>
-        <li>Voluntariado</li>
+        <li><a href="#">Curso</a></li>
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+        <li><a href="#">Voluntariado</a></li>
       </ul>
+
     </div>
 
   </header>
+
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 </html>
