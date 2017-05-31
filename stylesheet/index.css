@@ -1,28 +1,50 @@
 /* las variables van arriba si no se utiliza distintos documentos para hacerlos */
+/* COLORES */
+/* TIPOGRAFIA */
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
 body {
   margin: 0px;
-  font-family: sans-serif; }
+  font-family: "barrio"; }
+
+p {
+  font-family: "open sans"; }
 
 .header {
   width: 100%;
-  height: 500px;
+  height: 100vh;
   position: absolute;
-  background-color: blue;
+  background-color: #7B71F8;
+  -webkit-animation: change-color 10s linear infinite alternate both;
+          animation: change-color 10s linear infinite alternate both;
   -webkit-transition: 1s;
   transition: 1s; }
 
+@-webkit-keyframes change-color {
+  0% {
+    background: #7B71F8; }
+  50% {
+    background: #30F4BF; }
+  100% {
+    background: #F43069; } }
+@keyframes change-color {
+  0% {
+    background: #7B71F8; }
+  50% {
+    background: #30F4BF; }
+  100% {
+    background: #F43069; } }
 .mov {
   -webkit-transform: translateX(200px);
           transform: translateX(200px); }
 
-.txt {
+.text {
   width: 80%;
   color: white;
-  padding: 20px 0; }
+  padding: 50px 0;
+  margin: 0 auto; }
 
 .menu-mobile {
   width: 50%;
@@ -42,6 +64,14 @@ body {
 
 .nav-small li {
   padding: 20px 0; }
+
+.nav-small li a {
+  text-decoration: none;
+  color: #000; }
+
+.nav-small li a:active {
+  text-decoration: none;
+  color: #7B71F8; }
 
 .btn {
   width: 15%;
@@ -68,7 +98,6 @@ body {
   width: 100%;
   background-color: white;
   padding: 10px 40px;
-  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -106,6 +135,15 @@ body {
 
   .nav li {
     padding: 0 20px; }
+
+  .nav li a {
+    text-decoration: none;
+    color: #000; }
+
+  .nav li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #7B71F8;
+    color: #000; }
 
   .logo {
     width: 5%; }
