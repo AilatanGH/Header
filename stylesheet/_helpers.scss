@@ -2,3 +2,9 @@
 .mov {
   transform: translateX(200px);
 }
+
+@media (min-width: 780px){
+  .mov {
+    transform: translateX(0px);
+  }
+}

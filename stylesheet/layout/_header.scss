@@ -1,4 +1,10 @@
 
+
+.container {
+  position: absolute;
+  transition: 1s;
+}
+
 .header {
   width: 100%;
   height: 60px;
@@ -23,10 +29,6 @@
 }
 
 @media (min-width: 780px){
-  
-  .container {
-    transform: translateX(0px);
-  }
 
   .nav {
     list-style: none;
