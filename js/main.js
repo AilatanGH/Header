@@ -6,13 +6,13 @@ var closeElement = document.getElementById("close");
 // Menu versión movil
 
 function showMenu() {
-  var headerElement = document.querySelector(".header");
-    headerElement.classList("mov");
+  var bodyElement = document.querySelector(".container");
+    bodyElement.classList.add("mov");
 }
 
 function closeMenu() {
-  var headerElement = document.querySelector(".header");
-    headerElement.classList.remove("mov");
+  var bodyElement = document.querySelector(".container");
+    bodyElement.classList.remove("mov");
 }
 
 iconElement.addEventListener("click", showMenu);
