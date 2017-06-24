@@ -40,7 +40,7 @@ p {
   -webkit-transform: translateX(200px);
           transform: translateX(200px); }
 
-.text {
+.main {
   width: 80%;
   color: white;
   padding: 50px 0;

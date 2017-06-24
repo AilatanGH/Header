@@ -7,7 +7,7 @@ var closeElement = document.getElementById("close");
 
 function showMenu() {
   var headerElement = document.querySelector(".header");
-    headerElement.classList.add("mov");
+    headerElement.classList("mov");
 }
 
 function closeMenu() {
