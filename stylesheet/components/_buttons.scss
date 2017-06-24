@@ -1,0 +1,23 @@
+
+.btn {
+  width: 50px;
+  background-color: $ligth-color;
+  border: 0px;
+  padding: 0;
+  display: inline;
+}
+
+.btn-close {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 25%;
+  background-color: $ligth-color;
+  border: 0px;
+  padding: 0;
+}
+
+@media (min-width: 780px){
+  .btn {
+    display: none;
+  }
+}

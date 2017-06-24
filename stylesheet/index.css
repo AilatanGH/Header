@@ -1,27 +1,89 @@
 /* las variables van arriba si no se utiliza distintos documentos para hacerlos */
-/* COLORES */
-/* TIPOGRAFIA */
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+/* COLORS */
+/* FONT-FAMILY */
+/* FONT-SIZE */
+.btn {
+  width: 50px;
+  background-color: white;
+  border: 0px;
+  padding: 0;
+  display: inline; }
 
-body {
-  margin: 0px;
-  font-family: "barrio"; }
+.btn-close {
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 25%;
+  background-color: white;
+  border: 0px;
+  padding: 0; }
 
-p {
-  font-family: "open sans"; }
+@media (min-width: 780px) {
+  .btn {
+    display: none; } }
+.btn-close img,
+.logo img,
+.btn img {
+  width: 100%; }
 
 .header {
   width: 100%;
-  height: 100vh;
-  position: absolute;
-  background-color: #7B71F8;
-  -webkit-animation: change-color 10s linear infinite alternate both;
-          animation: change-color 10s linear infinite alternate both;
-  -webkit-transition: 1s;
-  transition: 1s; }
+  height: 60px;
+  background-color: white; }
 
+.menu-web {
+  width: 100%;
+  height: 60px;
+  padding: 5px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.logo {
+  width: 50px; }
+
+.nav {
+  display: none; }
+
+@media (min-width: 780px) {
+  .container {
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px); }
+
+  .nav {
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+
+  .nav li {
+    padding: 0 20px;
+    font-family: "barrio"; }
+
+  .nav li a {
+    text-decoration: none;
+    color: #000; }
+
+  .nav li a:hover {
+    text-decoration: none;
+    border-bottom: 3px solid #7B71F8;
+    color: #000; }
+
+  .logo {
+    width: 50px; } }
 @-webkit-keyframes change-color {
   0% {
     background: #7B71F8; }
@@ -36,15 +98,17 @@ p {
     background: #30F4BF; }
   100% {
     background: #F43069; } }
-.mov {
-  -webkit-transform: translateX(200px);
-          transform: translateX(200px); }
-
 .main {
-  width: 80%;
+  width: 100%;
+  height: 100vh;
   color: white;
-  padding: 50px 0;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding: 10%;
+  background-color: #7B71F8;
+  -webkit-animation: change-color 10s linear infinite alternate both;
+          animation: change-color 10s linear infinite alternate both;
+  -webkit-transition: 1s;
+  transition: 1s; }
 
 .menu-mobile {
   width: 50%;
@@ -73,85 +137,26 @@ p {
   text-decoration: none;
   color: #7B71F8; }
 
-.btn {
-  width: 15%;
-  background-color: white;
-  border: 0px;
-  padding: 0;
-  display: inline; }
-
-.btn img {
-  width: 100%; }
-
-.btn-close {
-  margin-top: 10px;
-  margin-left: 20px;
-  width: 25%;
-  background-color: white;
-  border: 0px;
-  padding: 0; }
-
-.btn-close img {
-  width: 100%; }
-
-.menu-web {
-  width: 100%;
-  background-color: white;
-  padding: 10px 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-
-.nav {
-  display: none; }
-
-.logo {
-  width: 15%; }
-
-.logo img {
-  width: 100%; }
-
 @media (min-width: 780px) {
-  .nav {
-    width: 60%;
-    list-style: none;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end; }
-
-  .nav li {
-    padding: 0 20px; }
-
-  .nav li a {
-    text-decoration: none;
-    color: #000; }
-
-  .nav li a:hover {
-    text-decoration: none;
-    border-bottom: 3px solid #7B71F8;
-    color: #000; }
-
-  .logo {
-    width: 5%; }
-
-  .btn {
-    display: none; }
-
   .menu-mobile {
     display: none; } }
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+body {
+  margin: 0px;
+  font-family: "open sans"; }
+
+h1 {
+  font-family: "barrio";
+  font-size: 2em; }
+
+p {
+  font-size: 1em; }
+
+.mov {
+  -webkit-transform: translateX(200px);
+          transform: translateX(200px); }
 
 /*# sourceMappingURL=index.css.map */

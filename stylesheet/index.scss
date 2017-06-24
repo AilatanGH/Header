@@ -1,2 +1,9 @@
 @import "settings";
+@import "components/buttons",
+        "components/images";
+@import "layout/header",
+        "layout/main",
+        "layout/menumobile";
 @import "general";
+@import "typography";
+@import "helpers";

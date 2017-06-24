@@ -1,0 +1,32 @@
+.menu-mobile {
+  width: 50%;
+  z-index: -1;
+  position: fixed;
+}
+
+.nav-small {
+  font-size: 20px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-small li {
+  padding: 20px 0;
+}
+
+.nav-small li a {
+  text-decoration: none;
+  color: $noir-color;
+}
+
+.nav-small li a:active {
+  text-decoration: none;
+  color: $background-purple;
+}
+
+@media (min-width: 780px){
+  .menu-mobile {
+    display: none;
+  }
+}
